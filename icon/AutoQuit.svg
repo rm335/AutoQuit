@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background: diagonal magenta-violet (TL) -> deep electric blue (BR) -->
+    <linearGradient id="bg" gradientUnits="userSpaceOnUse" x1="120" y1="80" x2="930" y2="960">
+      <stop offset="0"    stop-color="#EA3AD0"/>
+      <stop offset="0.38" stop-color="#9C3BF0"/>
+      <stop offset="0.70" stop-color="#4E43EA"/>
+      <stop offset="1"    stop-color="#1B49D6"/>
+    </linearGradient>
+
+    <!-- Soft radial light bloom in the upper-left corner -->
+    <radialGradient id="bloom" gradientUnits="userSpaceOnUse" cx="300" cy="235" r="560">
+      <stop offset="0"    stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.42" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="1"    stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Translucent polished-glass body, brighter at the top -->
+    <linearGradient id="glassBody" gradientUnits="userSpaceOnUse" x1="0" y1="206" x2="0" y2="818">
+      <stop offset="0"    stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.11"/>
+      <stop offset="1"    stop-color="#FFFFFF" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <!-- Specular sheen down the upper edges -->
+    <linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="0" y1="200" x2="0" y2="560">
+      <stop offset="0"    stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="1"    stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Gentle internal glow -->
+    <radialGradient id="innerGlow" gradientUnits="userSpaceOnUse" cx="512" cy="512" r="320">
+      <stop offset="0"   stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1"   stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Faint chromatic bend, sampled across the X -->
+    <linearGradient id="chroma" gradientUnits="userSpaceOnUse" x1="206" y1="206" x2="818" y2="818">
+      <stop offset="0"   stop-color="#6BE9FF" stop-opacity="0.18"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1"   stop-color="#FF6BD6" stop-opacity="0.16"/>
+    </linearGradient>
+
+    <filter id="blurShadow"  x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="15"/></filter>
+    <filter id="blurRefract" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="blurDarkRim" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+
+    <!-- Squircle silhouette -->
+    <clipPath id="squircle"><rect x="0" y="0" width="1024" height="1024" rx="230" ry="230"/></clipPath>
+
+    <!-- The X itself (two crossing round-capped bars) used as a mask -->
+    <mask id="xMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="black"/>
+      <g stroke="#FFFFFF" stroke-width="132" stroke-linecap="round" fill="none">
+        <line x1="272" y1="272" x2="752" y2="752"/>
+        <line x1="752" y1="272" x2="272" y2="752"/>
+      </g>
+    </mask>
+
+    <!-- Bright top-left rim: X shifted up-left, minus the X itself -> thin crescent -->
+    <mask id="rimLight" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="black"/>
+      <g stroke-width="132" stroke-linecap="round" fill="none" transform="translate(-7,-7)" stroke="#FFFFFF">
+        <line x1="272" y1="272" x2="752" y2="752"/>
+        <line x1="752" y1="272" x2="272" y2="752"/>
+      </g>
+      <g stroke-width="132" stroke-linecap="round" fill="none" stroke="#000000">
+        <line x1="272" y1="272" x2="752" y2="752"/>
+        <line x1="752" y1="272" x2="272" y2="752"/>
+      </g>
+    </mask>
+
+    <!-- Dark bottom-right rim for depth -->
+    <mask id="rimDark" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="black"/>
+      <g stroke-width="132" stroke-linecap="round" fill="none" transform="translate(8,8)" stroke="#FFFFFF">
+        <line x1="272" y1="272" x2="752" y2="752"/>
+        <line x1="752" y1="272" x2="272" y2="752"/>
+      </g>
+      <g stroke-width="132" stroke-linecap="round" fill="none" stroke="#000000">
+        <line x1="272" y1="272" x2="752" y2="752"/>
+        <line x1="752" y1="272" x2="272" y2="752"/>
+      </g>
+    </mask>
+  </defs>
+
+  <!-- Icon silhouette + everything clipped to it -->
+  <rect width="1024" height="1024" rx="230" ry="230" fill="url(#bg)"/>
+  <g clip-path="url(#squircle)">
+    <!-- upper-left bloom -->
+    <rect width="1024" height="1024" fill="url(#bloom)"/>
+
+    <!-- contact shadow beneath the floating glass -->
+    <g transform="translate(0,20)" filter="url(#blurShadow)" opacity="0.45">
+      <g stroke="#0B0A2E" stroke-width="132" stroke-linecap="round" fill="none">
+        <line x1="272" y1="272" x2="752" y2="752"/>
+        <line x1="752" y1="272" x2="272" y2="752"/>
+      </g>
+    </g>
+
+    <!-- refraction / lensing: magnified, shifted copy of the background, seen through the X -->
+    <g mask="url(#xMask)" filter="url(#blurRefract)">
+      <g transform="translate(512,512) scale(1.22) translate(-512,-512) translate(-16,-10)">
+        <rect width="1024" height="1024" fill="url(#bg)"/>
+      </g>
+    </g>
+    <!-- subtle chromatic edge bend -->
+    <rect width="1024" height="1024" fill="url(#chroma)" mask="url(#xMask)"/>
+
+    <!-- translucent glass body -->
+    <rect width="1024" height="1024" fill="url(#glassBody)" mask="url(#xMask)"/>
+    <!-- internal glow -->
+    <rect width="1024" height="1024" fill="url(#innerGlow)" mask="url(#xMask)"/>
+    <!-- specular sheen on the upper edges -->
+    <rect width="1024" height="1024" fill="url(#sheen)" mask="url(#xMask)"/>
+
+    <!-- dark bottom-right rim, then crisp bright top-left rim -->
+    <rect width="1024" height="1024" fill="#160A36" opacity="0.40" mask="url(#rimDark)" filter="url(#blurDarkRim)"/>
+    <rect width="1024" height="1024" fill="#FFFFFF" opacity="0.95" mask="url(#rimLight)"/>
+  </g>
+</svg>

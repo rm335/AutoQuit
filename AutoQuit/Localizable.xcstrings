@@ -1,0 +1,331 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "“Busy” means playing media, downloading, or keeping the Mac awake. A warning lets you keep an app before it’s quit." : {
+
+    },
+    "%lldh" : {
+
+    },
+    "Apps are asked to quit normally, so you can save your work." : {
+      "comment" : "Settings footer when force quit is off",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apps wordt gevraagd normaal af te sluiten, zodat je je werk kunt opslaan."
+          }
+        }
+      }
+    },
+    "Apps you open appear here with a countdown until they’re auto-quit." : {
+      "comment" : "Empty-state subtitle in the menu bar popover",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apps die je opent verschijnen hier met een aftelling tot ze automatisch worden afgesloten."
+          }
+        }
+      }
+    },
+    "Auto-quit %@" : {
+      "comment" : "Toggle label; %@ is the app name",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ automatisch afsluiten"
+          }
+        }
+      }
+    },
+    "Auto-quit %@ when idle" : {
+      "comment" : "Tooltip on the per-app toggle when off; %@ is the app name",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ automatisch afsluiten bij inactiviteit"
+          }
+        }
+      }
+    },
+    "AutoQuit" : {
+      "comment" : "Brand name — do not translate",
+      "shouldTranslate" : false
+    },
+    "Close all selected" : {
+      "comment" : "Menu bar footer button: quit all selected apps now",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle geselecteerde afsluiten"
+          }
+        }
+      }
+    },
+    "Don’t quit busy apps" : {
+
+    },
+    "Excluded" : {
+      "comment" : "Countdown pill: app is opted out of auto-quit",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uitgesloten"
+          }
+        }
+      }
+    },
+    "Excluded from auto-quit" : {
+      "comment" : "Accessibility: app is opted out of auto-quit",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uitgesloten van automatisch afsluiten"
+          }
+        }
+      }
+    },
+    "Force close all selected" : {
+      "comment" : "Menu bar footer button: force quit all selected apps now",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle geselecteerde geforceerd afsluiten"
+          }
+        }
+      }
+    },
+    "Force quit %@ — discards unsaved changes" : {
+      "comment" : "Help/accessibility label for the force-close button; %@ is the app name",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ geforceerd afsluiten — negeert niet-opgeslagen wijzigingen"
+          }
+        }
+      }
+    },
+    "Force quit ends apps immediately and discards unsaved changes." : {
+      "comment" : "Settings footer when force quit is on",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geforceerd afsluiten beëindigt apps direct en negeert niet-opgeslagen wijzigingen."
+          }
+        }
+      }
+    },
+    "Force quit without saving" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geforceerd afsluiten zonder opslaan"
+          }
+        }
+      }
+    },
+    "General" : {
+      "comment" : "Settings section header",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algemeen"
+          }
+        }
+      }
+    },
+    "Idle timeout" : {
+      "comment" : "Settings section header",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time-out bij inactiviteit"
+          }
+        }
+      }
+    },
+    "Idle too long — closing in 60 seconds. Keep it open?" : {
+      "comment" : "Auto-quit warning notification body"
+    },
+    "Keep" : {
+      "comment" : "Notification action: keep the idle app running"
+    },
+    "Launch at login" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Openen bij inloggen"
+          }
+        }
+      }
+    },
+    "No apps to track" : {
+      "comment" : "Empty-state title in the menu bar popover",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geen apps om te volgen"
+          }
+        }
+      }
+    },
+    "Quit %@" : {
+      "comment" : "Accessibility label for the quit button; %@ is the app name",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ afsluiten"
+          }
+        }
+      }
+    },
+    "Quit apps after %lldh of inactivity" : {
+      "comment" : "Stepper label; %lld is the number of hours",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apps afsluiten na %lld uur inactiviteit"
+          }
+        }
+      }
+    },
+    "Quit AutoQuit" : {
+      "comment" : "Brand name — do not translate",
+      "shouldTranslate" : false
+    },
+    "Quit now" : {
+      "comment" : "Notification action: quit the idle app immediately"
+    },
+    "Quits in %@" : {
+      "comment" : "Accessibility: time until auto-quit, e.g. “Quits in 1 hour, 30 minutes”",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sluit over %@"
+          }
+        }
+      }
+    },
+    "Quitting" : {
+      "comment" : "Settings section header for quit options",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afsluiten"
+          }
+        }
+      }
+    },
+    "Quitting %@" : {
+      "comment" : "Auto-quit warning notification title"
+    },
+    "Reset idle timer for %@" : {
+      "comment" : "Accessibility label for the reset button; %@ is the app name",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inactiviteitstimer voor %@ opnieuw instellen"
+          }
+        }
+      }
+    },
+    "Reset the idle timer for %@" : {
+      "comment" : "Tooltip for the reset button; %@ is the app name",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inactiviteitstimer voor %@ opnieuw instellen"
+          }
+        }
+      }
+    },
+    "Set how long %@ can stay idle before quitting" : {
+
+    },
+    "Set per-app exceptions from the menu bar list." : {
+      "comment" : "Settings footer under Idle timeout",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stel uitzonderingen per app in via de menubalklijst."
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "comment" : "Settings window title",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen"
+          }
+        }
+      }
+    },
+    "Stop auto-quitting %@" : {
+      "comment" : "Tooltip on the per-app toggle when on; %@ is the app name",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ niet meer automatisch afsluiten"
+          }
+        }
+      }
+    },
+    "Unknown" : {
+      "comment" : "Fallback shown when an app has no name",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onbekend"
+          }
+        }
+      }
+    },
+    "Use default (%lldh)" : {
+
+    },
+    "Version %@ (%@)" : {
+      "comment" : "App version in Settings; first %@ is version, second is build number",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versie %@ (%@)"
+          }
+        }
+      }
+    },
+    "Warn before quitting" : {
+
+    },
+    "When idle" : {
+
+    }
+  },
+  "version" : "1.0"
+}
