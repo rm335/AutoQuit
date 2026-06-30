@@ -417,7 +417,7 @@ struct ContentView: View {
             }
             footer
         }
-        .frame(width: 320)
+        .frame(width: 400)
     }
 
     private var appList: some View {
