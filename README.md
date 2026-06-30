@@ -41,6 +41,8 @@ macOS 13.0 (Ventura) or later. Building from source also needs Xcode.
 brew install --cask rm335/tap/autoquit
 ```
 
+_On Homebrew's strict tap-trust mode? Run `brew trust --tap rm335/tap` first._
+
 **Direct download:** grab `AutoQuit-1.0.0.zip` from the [latest release](https://github.com/rm335/AutoQuit/releases/latest), unzip it, and move `AutoQuit.app` into `/Applications`.
 
 > [!IMPORTANT]
