@@ -31,12 +31,26 @@ You shut the lid at night and open it the next morning to find yesterday's heavy
 
 ## Requirements
 
-macOS 13.0 (Ventura) or later, and Xcode to build.
+macOS 13.0 (Ventura) or later. Building from source also needs Xcode.
 
-## Getting started
+## Install
 
-> [!NOTE]
-> There's no prebuilt download yet (no App Store, notarized build, or Homebrew cask) — you build it from source.
+**Homebrew** (recommended):
+
+```bash
+brew install --cask rm335/tap/autoquit
+```
+
+**Direct download:** grab `AutoQuit-1.0.0.zip` from the [latest release](https://github.com/rm335/AutoQuit/releases/latest), unzip it, and move `AutoQuit.app` into `/Applications`.
+
+> [!IMPORTANT]
+> AutoQuit isn't signed or notarized yet, so macOS Gatekeeper blocks it on first launch — this applies to both the Homebrew and direct-download installs. To open it the first time, either clear the quarantine flag:
+> ```bash
+> xattr -dr com.apple.quarantine /Applications/AutoQuit.app
+> ```
+> or right-click `AutoQuit.app` in Finder and choose **Open**. You only need to do this once.
+
+## Build from source
 
 Clone the repository, then either open it in Xcode or build from the command line.
 
